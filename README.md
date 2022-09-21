@@ -5,6 +5,11 @@ This app reads stories from https://www.pivotaltracker.com.
 
 ## Getting Started
 
+Generated with:
+
+- Flutter 3.3.2
+- Dart 2.18.1
+
 To run this project use the following commands:
 
 - pub get
