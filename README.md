@@ -1,16 +1,12 @@
 # pivotaltracker_stories
 
-A new Flutter project.
+A project made with Flutter for Android and iOS operating systems.
+This app reads stories from https://www.pivotaltracker.com.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this project use the following commands:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- pub get
+- flutter run
+- done!
