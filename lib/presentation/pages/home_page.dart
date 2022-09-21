@@ -38,9 +38,13 @@ class _HomePageState extends State<HomePage> {
         physics: const BouncingScrollPhysics(),
         slivers: [
           SliverAppBar.large(
+            backgroundColor: Colors.blue,
             stretch: true,
             surfaceTintColor: Colors.blue,
-            title: const Text('Stories'),
+            title: const Text(
+              'Stories',
+              style: TextStyle(color: Colors.white),
+            ),
             centerTitle: false,
             actions: [
               IconButton(
@@ -50,6 +54,7 @@ class _HomePageState extends State<HomePage> {
                 },
                 icon: const Icon(
                   Icons.search_sharp,
+                  color: Colors.white,
                 ),
               ),
               IconButton(
@@ -61,6 +66,7 @@ class _HomePageState extends State<HomePage> {
                 },
                 icon: const Icon(
                   Icons.sort,
+                  color: Colors.white,
                 ),
               ),
             ],

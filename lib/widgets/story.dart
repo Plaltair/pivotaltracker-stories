@@ -60,7 +60,8 @@ class Story extends StatelessWidget {
                       ),
                       Text(
                         story.priority!,
-                        style: const TextStyle(fontSize: 10),
+                        style: const TextStyle(
+                            fontSize: 10, fontWeight: FontWeight.bold),
                       ),
                     ],
                     const SizedBox(
@@ -68,7 +69,10 @@ class Story extends StatelessWidget {
                     ),
                     Text(
                       toBeginningOfSentenceCase(story.currentState) ?? "",
-                      style: const TextStyle(fontSize: 10, color: Colors.blue),
+                      style: const TextStyle(
+                          fontSize: 10,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
@@ -114,7 +118,7 @@ class Story extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 5,
+            height: 10,
           ),
           Align(
             alignment: Alignment.center,

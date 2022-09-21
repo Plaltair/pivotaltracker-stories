@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:pivotaltracker_stories/models/story_model.dart';
 import 'package:pivotaltracker_stories/widgets/search_field.dart';
 import 'package:pivotaltracker_stories/widgets/stories_list.dart';
@@ -18,10 +19,19 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => context.pop(),
+        ),
+        backgroundColor: Colors.blue,
+      ),
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         children: [
+          const SizedBox(
+            height: 20,
+          ),
           SearchField(
             onChange: (value) {
               setState(() {
