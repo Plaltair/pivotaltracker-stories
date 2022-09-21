@@ -26,7 +26,7 @@ class _SearchPageState extends State<SearchPage> {
             onChange: (value) {
               setState(() {
                 _searchText = value;
-                if (value.length > 3) {
+                if (value.length > 2) {
                   _filter = widget.stories
                       .where((element) =>
                           element.name
@@ -41,11 +41,22 @@ class _SearchPageState extends State<SearchPage> {
               });
             },
           ),
-          if (_searchText.length > 3) ...[
+          if (_searchText.length > 2) ...[
             const SizedBox(
               height: 40,
             ),
             StoriesList(stories: _filter),
+          ] else ...[
+            const SizedBox(
+              height: 40,
+            ),
+            const Center(
+              child: Text(
+                "Write more than two characters.",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
+              ),
+            ),
           ]
         ],
       ),
