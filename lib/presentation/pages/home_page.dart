@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   List<StoryModel>? _stories;
   bool _loading = true;
 
-  bool _filter = false;
+  bool _asc = false;
 
   @override
   void initState() {
@@ -61,11 +61,11 @@ class _HomePageState extends State<HomePage> {
                 tooltip: "Filter by date",
                 onPressed: () {
                   setState(() {
-                    _filter = !_filter;
+                    _asc = !_asc;
                   });
                 },
-                icon: const Icon(
-                  Icons.sort,
+                icon: Icon(
+                  _asc ? Icons.arrow_upward : Icons.arrow_downward,
                   color: Colors.white,
                 ),
               ),
@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.blue,
                       ),
                     )
-                  : _filter
+                  : _asc
                       ? StoriesList(
                           stories: _stories!
                             ..sort(
