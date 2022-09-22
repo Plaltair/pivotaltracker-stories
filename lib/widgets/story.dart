@@ -52,18 +52,9 @@ class Story extends StatelessWidget {
                     Text(
                       DateFormat("yyyy-MM-dd")
                           .format(DateTime.parse(story.updatedAt)),
-                      style: const TextStyle(fontSize: 12),
+                      style: TextStyle(
+                          fontSize: 12, color: Colors.black.withOpacity(0.7)),
                     ),
-                    if (story.priority != null) ...[
-                      const SizedBox(
-                        height: 2.5,
-                      ),
-                      Text(
-                        story.priority!,
-                        style: const TextStyle(
-                            fontSize: 10, fontWeight: FontWeight.bold),
-                      ),
-                    ],
                     const SizedBox(
                       height: 2.5,
                     ),
@@ -74,6 +65,18 @@ class Story extends StatelessWidget {
                           color: Colors.blue,
                           fontWeight: FontWeight.bold),
                     ),
+                    if (story.priority != null) ...[
+                      const SizedBox(
+                        height: 2.5,
+                      ),
+                      Text(
+                        story.priority!,
+                        style: const TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.red),
+                      ),
+                    ],
                   ],
                 ),
               ),
