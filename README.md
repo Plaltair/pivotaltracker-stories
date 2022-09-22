@@ -25,4 +25,4 @@ To run this project use the following commands:
 - lib/routing: routing implementations.
 - lib/widgets: all utils widgets for entire app.
 
-![Alt text](screenshots/screenshot_1.png?raw=true "Screenshot 1")
+<img src="screenshots/screenshot_1.png" alt="drawing" width="200"/>
