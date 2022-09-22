@@ -1,7 +1,7 @@
 # pivotaltracker_stories
 
 A project made with Flutter for Android and iOS operating systems.
-This app reads stories from https://www.pivotaltracker.com.
+This app reads stories from https://www.pivotaltracker.com/services/v5/projects/2116794/stories
 
 ## Getting Started
 
