@@ -25,4 +25,7 @@ To run this project use the following commands:
 - lib/routing: routing implementations.
 - lib/widgets: all utils widgets for entire app.
 
+## Screenshots
+
 <img src="screenshots/screenshot_1.png" alt="drawing" width="200"/>
+<img src="screenshots/screenshot_2.png" alt="drawing" width="200"/>
